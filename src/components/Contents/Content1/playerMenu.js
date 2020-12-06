@@ -1,19 +1,16 @@
 import React, {useRef} from 'react'
 import player_card from "../../../data/player_data"; 
-import { Scrollbars } from "react-custom-scrollbars";
 
 export default function PlayerMenu() {
     const playermenuRef = useRef(null);
 
     const listItems = player_card.map((item) =>
         <PlayerMenuItems>
-            <Scrollbars>
             <div className="player-container">
                 <p>{item.player_name}</p>
                 {console.log(item.status)}
                 <span class="list-item"> <input className="list-check" checked={item.isChecked} type="checkbox"/> </span>    
             </div>
-            </Scrollbars>
         </PlayerMenuItems>
 
     );
