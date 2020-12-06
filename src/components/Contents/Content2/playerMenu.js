@@ -11,7 +11,7 @@ export default function PlayerMenu() {
             <div className="player-container">
                 <p>{item.player_name}</p>
                 {console.log(item.status)}
-                <span class="list-item"> <input className="list-check" checked={item.isChecked} type="checkbox"/> </span>    
+                <span class="list-item"> <input className="list-check" id="menu-check" checked={item.isChecked} type="checkbox"/> </span>    
             </div>
             </Scrollbars>
         </PlayerMenuItems>
@@ -26,7 +26,7 @@ export default function PlayerMenu() {
 
     return (
         <div className="playermenu" ref={playermenuRef}>
-            <input type="search" placeholder="Search here" className="menu-search"/>
+            <input type="search" id="search" placeholder="Search here" className="menu-search"/>
             <hr className="solid"/>
             {listItems}
             <hr className="solid"/>

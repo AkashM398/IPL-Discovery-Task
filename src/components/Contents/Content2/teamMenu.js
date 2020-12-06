@@ -8,7 +8,7 @@ export default function TeamMenu() {
         <PlayerMenuItems>
             <div className="player-container">
                 <p>{item.team_name}</p>
-                <span class="list-item"> <input className="list-check" type="checkbox" checked={item.isChecked}/> </span>    
+                <span class="list-item"> <input id="menu-check" className="list-check" type="checkbox" checked={item.isChecked}/> </span>    
             </div>
         </PlayerMenuItems>
     );
@@ -21,7 +21,7 @@ export default function TeamMenu() {
 
     return (
         <div className="playermenu" ref={playermenuRef}>
-            <input type="search" placeholder="Search here" className="menu-search"/>
+            <input type="search" id="search" placeholder="Search here" className="menu-search"/>
             <hr className="solid"/>
             <div className="list-content">
                 {listItems}

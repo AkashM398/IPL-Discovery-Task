@@ -25,7 +25,7 @@ const MainContent = () => {
             <div className="filter-container">
                 {props.children}
                 <div className="search-bar">
-                    <input type="search" placeholder="Search here" className="search-filter"/>
+                    <input type="search" id="filter" placeholder="Search here" className="search-filter"/>
                 </div>           
             </div>
         );

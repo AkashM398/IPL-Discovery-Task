@@ -8,7 +8,7 @@ export default function CityMenu() {
         <PlayerMenuItems>
             <div className="player-container">
                 <p>{item.city}</p>
-                <span class="list-item"> <input className="list-check" type="checkbox"/> </span>    
+                <span class="list-item"> <input id="menu-check" className="list-check" type="checkbox"/> </span>    
             </div>
         </PlayerMenuItems>
     );
@@ -21,7 +21,7 @@ export default function CityMenu() {
 
     return (
         <div className="playermenu" ref={playermenuRef}>
-            <input type="search" placeholder="Search here" className="menu-search"/>
+            <input id="search" type="search" placeholder="Search here" className="menu-search"/>
             <hr className="solid"/>
             {listItems}
             <hr className="solid"/>
